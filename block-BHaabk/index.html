@@ -1,13 +1,82 @@
-<!-- 
-1. Create a simple page having a header, main content, and a footer.
-
-2. Inside the header keep the brand name to the left and all the navigation to the right.
-
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
-
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
-
-6. After the gallery section footer will come.
-
-7. Use flexbox properties and values to create columns.
- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container">
+    <!--Header-section-->
+    <header>
+      <div class="header">
+        <a href="#">
+          <img class="brand-img" src="./brand-logo.png" alt="brand-img" />
+        </a>
+        <nav class="nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--Article-section-->
+      <section>
+        <div class="box">
+           <article class="article-blog">
+        <div class="article-header">
+           <h1>This is my article</h1>          
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              doloribus laborum sequi ullam cumque consequuntur! Porro itaque
+              earum voluptatum ex corporis sit modi, veritatis adipisci, ducimus
+              sint et necessitatibus suscipit? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nobis animi accusamus asperiores
+              placeat officiis, repellendus exercitationem quasi architecto
+              dolores consequatur in sed harum. Aperiam esse hic illo officiis
+              praesentium eos? Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Dignissimos, beatae quae? Assumenda odio sit
+              facere maxime cupiditate perspiciatis fuga itaque eveniet? Dolores
+              odit beatae aut vel temporibus, nihil obcaecati excepturi!
+            </p>
+          </div>
+            <img src="article-pic.jpg" alt="knowldge-tree pic" />
+          </article>
+        </div>
+      </section>
+    </main>
+    <section>
+      <!--Gallery-section-->
+      <div class="box-1">
+        <h2 class="gallery-header">gallery</h2>
+        <div class="gallery">
+          <img class="pic-size" src="gallery-1.jpg" />
+          <img class="pic-size" src="gallery-2.jpg" />
+          <img class="pic-size" src="gallery-3.jpg" />
+          <img class="pic-size" src="gallery-4.jpg"/>
+          <img class="pic-size" src="gallery-5.jpg" />
+          <img class="pic-size" src="gallery-6.jpg"/>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!--Footer-section-->
+      <div class="footer">
+      <small>&copy All Rights Reserved.</small>
+      <nav class="social-nav">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+      </nav>
+      </div>
+    </footer>
+  </body>
+</html>
